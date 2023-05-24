@@ -14,7 +14,11 @@ public class Calculadora {
     String multiplicacao = "multiplicacao";
     String subtracao = "subtracao";
     String divisao = "divisao";
+    String novamente = "Sim";
     
+    
+    while(novamente.equals("Sim") || novamente.equals("sim")) {
+  
     System.out.println("Digite a operação: ");
     opc = scan.next();
     
@@ -53,6 +57,9 @@ public class Calculadora {
     	      }
             }
         }
+        System.out.println("Deseja Fazer uma nova operação");
+        novamente = scan.next();
+      }
  }
 }
 	
